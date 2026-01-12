@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - DefinedLook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">DefinedLook</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#search" class="icon">🔍</a>
+                    <a href="#account" class="icon">👤</a>
+                    <a href="#cart" class="icon cart-icon">🛒 <span class="cart-count">0</span></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="products.html">Products</a> / <span id="product-name-breadcrumb">Product</span>
+            </div>
+
+            <div class="product-detail-grid">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="main-product-image" src="https://via.placeholder.com/600x600?text=Product+Image" alt="Product">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://via.placeholder.com/100x100?text=1" alt="Thumbnail 1" class="thumbnail active">
+                        <img src="https://via.placeholder.com/100x100?text=2" alt="Thumbnail 2" class="thumbnail">
+                        <img src="https://via.placeholder.com/100x100?text=3" alt="Thumbnail 3" class="thumbnail">
+                        <img src="https://via.placeholder.com/100x100?text=4" alt="Thumbnail 4" class="thumbnail">
+                    </div>
+                </div>
+
+                <div class="product-details-info">
+                    <h1 id="product-title">Hydrating Serum</h1>
+                    <div class="product-rating">
+                        ⭐⭐⭐⭐⭐ <span class="review-count">(124 reviews)</span>
+                    </div>
+                    <p class="product-price-large" id="product-price">$49.99</p>
+                    
+                    <div class="product-description">
+                        <p id="product-full-description">
+                            Our signature Hydrating Serum is a lightweight, fast-absorbing formula that delivers intense moisture deep into your skin. Powered by hyaluronic acid and botanical extracts, this serum helps plump, smooth, and restore your skin's natural radiance.
+                        </p>
+                        <ul>
+                            <li>✓ Suitable for all skin types</li>
+                            <li>✓ Hyaluronic acid for deep hydration</li>
+                            <li>✓ Vitamin B5 to soothe and repair</li>
+                            <li>✓ Non-comedogenic formula</li>
+                            <li>✓ Cruelty-free and vegan</li>
+                        </ul>
+                    </div>
+
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label for="size">Size:</label>
+                            <select id="size">
+                                <option value="30ml">30ml - $49.99</option>
+                                <option value="50ml">50ml - $69.99</option>
+                                <option value="100ml">100ml - $99.99</option>
+                            </select>
+                        </div>
+
+                        <div class="option-group">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn" id="decrease-qty">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button class="qty-btn" id="increase-qty">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-large" id="add-to-cart">Add to Cart</button>
+                        <button class="btn btn-outline" id="add-to-wishlist">♥ Add to Wishlist</button>
+                    </div>
+
+                    <div class="product-meta">
+                        <p><strong>SKU:</strong> <span id="product-sku">DL-HS-001</span></p>
+                        <p><strong>Category:</strong> <span id="product-category">Serums</span></p>
+                        <p><strong>Tags:</strong> Hydration, Anti-Aging, Daily Care</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="ingredients">Ingredients</button>
+                    <button class="tab-btn" data-tab="how-to-use">How to Use</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-panel active" id="ingredients">
+                        <h3>Key Ingredients</h3>
+                        <p><strong>Hyaluronic Acid:</strong> A powerful humectant that can hold up to 1000x its weight in water, providing deep hydration and plumping effects.</p>
+                        <p><strong>Vitamin B5 (Panthenol):</strong> Helps to soothe, moisturize, and repair the skin barrier.</p>
+                        <p><strong>Niacinamide:</strong> Improves skin texture, minimizes pores, and evens out skin tone.</p>
+                        <p><strong>Botanical Extracts:</strong> Green tea and chamomile extracts provide antioxidant protection and calming benefits.</p>
+                    </div>
+
+                    <div class="tab-panel" id="how-to-use">
+                        <h3>How to Use</h3>
+                        <ol>
+                            <li>Cleanse your face thoroughly and pat dry.</li>
+                            <li>Apply 2-3 drops of serum to your fingertips.</li>
+                            <li>Gently press the serum into your face and neck, avoiding the eye area.</li>
+                            <li>Follow with your favorite moisturizer.</li>
+                            <li>Use morning and evening for best results.</li>
+                        </ol>
+                        <p><strong>Pro Tip:</strong> Apply to damp skin for enhanced absorption and hydration.</p>
+                    </div>
+
+                    <div class="tab-panel" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                                <span class="review-author">Sarah M.</span>
+                                <span class="review-date">2 weeks ago</span>
+                            </div>
+                            <p class="review-text">"This serum is amazing! My skin feels so much more hydrated and looks plumper. I've been using it for a month and can already see a difference in my fine lines."</p>
+                        </div>
+
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                                <span class="review-author">Jessica L.</span>
+                                <span class="review-date">1 month ago</span>
+                            </div>
+                            <p class="review-text">"Love this product! It absorbs quickly and doesn't leave any sticky residue. Perfect under makeup."</p>
+                        </div>
+
+                        <div class="review">
+                            <div class="review-header">
+                                <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                                <span class="review-author">Emily R.</span>
+                                <span class="review-date">2 months ago</span>
+                            </div>
+                            <p class="review-text">"Best serum I've ever used! My skin looks radiant and feels so soft. Highly recommend!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>You May Also Like</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300?text=Vitamin+C+Cream" alt="Vitamin C Cream">
+                        </div>
+                        <div class="product-info">
+                            <h3>Vitamin C Brightening Cream</h3>
+                            <p class="product-price">$59.99</p>
+                            <a href="product.html?id=2" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300?text=Eye+Cream" alt="Eye Cream">
+                        </div>
+                        <div class="product-info">
+                            <h3>Revitalizing Eye Cream</h3>
+                            <p class="product-price">$44.99</p>
+                            <a href="product.html?id=4" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300?text=Moisturizer" alt="Moisturizer">
+                        </div>
+                        <div class="product-info">
+                            <h3>Daily Defense Moisturizer SPF 30</h3>
+                            <p class="product-price">$52.99</p>
+                            <a href="product.html?id=8" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html?category=serums">Serums</a></li>
+                        <li><a href="products.html?category=creams">Creams</a></li>
+                        <li><a href="products.html?category=treatments">Treatments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#shipping">Shipping</a></li>
+                        <li><a href="#returns">Returns</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#facebook">Facebook</a></li>
+                        <li><a href="#twitter">Twitter</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DefinedLook. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
