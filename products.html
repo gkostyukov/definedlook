@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - DefinedLook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">DefinedLook</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#search" class="icon">🔍</a>
+                    <a href="#account" class="icon">👤</a>
+                    <a href="#cart" class="icon cart-icon">🛒 <span class="cart-count">0</span></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <div class="container">
+            <h1>Our Products</h1>
+            
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="all">All Products</option>
+                        <option value="serums">Serums</option>
+                        <option value="creams">Creams</option>
+                        <option value="treatments">Treatments</option>
+                        <option value="cleansers">Cleansers</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name: A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Hydrating+Serum" alt="Hydrating Serum">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hydrating Serum</h3>
+                        <p class="product-description">Deep moisture for all skin types</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (124)</div>
+                        <p class="product-price">$49.99</p>
+                        <a href="product.html?id=1" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Vitamin+C+Cream" alt="Vitamin C Cream">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vitamin C Brightening Cream</h3>
+                        <p class="product-description">Illuminate and even skin tone</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (98)</div>
+                        <p class="product-price">$59.99</p>
+                        <a href="product.html?id=2" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Night+Repair" alt="Night Repair">
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Night Repair Complex</h3>
+                        <p class="product-description">Restore while you sleep</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (156)</div>
+                        <p class="product-price">$79.99</p>
+                        <a href="product.html?id=3" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Eye+Cream" alt="Eye Cream">
+                    </div>
+                    <div class="product-info">
+                        <h3>Revitalizing Eye Cream</h3>
+                        <p class="product-description">Reduce dark circles and puffiness</p>
+                        <div class="product-rating">⭐⭐⭐⭐☆ (89)</div>
+                        <p class="product-price">$44.99</p>
+                        <a href="product.html?id=4" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Gentle+Cleanser" alt="Gentle Cleanser">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gentle Facial Cleanser</h3>
+                        <p class="product-description">Purify without stripping moisture</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (203)</div>
+                        <p class="product-price">$34.99</p>
+                        <a href="product.html?id=5" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Exfoliating+Mask" alt="Exfoliating Mask">
+                    </div>
+                    <div class="product-info">
+                        <h3>Exfoliating Treatment Mask</h3>
+                        <p class="product-description">Reveal smoother, brighter skin</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (145)</div>
+                        <p class="product-price">$54.99</p>
+                        <a href="product.html?id=6" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Retinol+Treatment" alt="Retinol Treatment">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Advanced Retinol Treatment</h3>
+                        <p class="product-description">Anti-aging powerhouse formula</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (178)</div>
+                        <p class="product-price">$89.99</p>
+                        <a href="product.html?id=7" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Moisturizer" alt="Daily Moisturizer">
+                    </div>
+                    <div class="product-info">
+                        <h3>Daily Defense Moisturizer SPF 30</h3>
+                        <p class="product-description">Hydrate and protect all day</p>
+                        <div class="product-rating">⭐⭐⭐⭐⭐ (167)</div>
+                        <p class="product-price">$52.99</p>
+                        <a href="product.html?id=8" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html?category=serums">Serums</a></li>
+                        <li><a href="products.html?category=creams">Creams</a></li>
+                        <li><a href="products.html?category=treatments">Treatments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#shipping">Shipping</a></li>
+                        <li><a href="#returns">Returns</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#facebook">Facebook</a></li>
+                        <li><a href="#twitter">Twitter</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DefinedLook. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
