@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             cartCount += quantity;
             updateCartCount();
+            saveCartCount();
 
             // Add to cart array
             cart.push({
@@ -100,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
             
             // In a real implementation, you would change the main image source
-            // mainImage.src = this.src.replace('100x100', '600x600');
+            // based on data attributes or a predefined image array
         });
     });
 
@@ -197,14 +198,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (categoryFilter) {
         categoryFilter.addEventListener('change', function() {
             // In a real implementation, this would filter products
-            console.log('Filter by category:', this.value);
+            // by the selected category and update the product grid
         });
     }
 
     if (sortSelect) {
         sortSelect.addEventListener('change', function() {
             // In a real implementation, this would sort products
-            console.log('Sort by:', this.value);
+            // by the selected criteria and update the product grid
         });
     }
 
